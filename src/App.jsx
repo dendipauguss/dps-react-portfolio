@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
-        <div>
+        <div className="animate__animated animate__fadeInUp animate__delay-3s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
             <q>Kode yang indah lahir dari pengalaman. 😎</q>
@@ -23,12 +23,12 @@ function App() {
             </a>
           </div>
         </div>
-        <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto" loading="lazy" />
+        <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-3s" loading="lazy" />
       </div>
 
       {/* Tentang */}
       <div className="tentang mt-32 py-10">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg">
+        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="zoom-in-up" data-aos-duration="1000">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
           <p className="text-base/loose mb-10">
             Saya adalah lulusan baru dengan gelar Sarjana Teknik Informatika dari Universitas Majalengka. Saya memiliki ketertarikan untuk terus mengikuti perkembangan teknologi terbaru serta menerapkan prinsip-prinsip object-oriented dalam pengembangan perangkat lunak. Saya bercita-cita berkarier di bidang teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Saya menguasai teknologi pengembangan full-stack seperti Laravel, CodeIgniter, serta ekosistem JavaScript modern termasuk React.js, Express.js, dan Next.js. Kemampuan inti saya mencakup PHP, JavaScript, Node.js, dan arsitektur aplikasi web modern.
@@ -49,9 +49,9 @@ function App() {
         </div>
 
         <div className="tools mt-32">
-          <h1 className="text-4xl/snug font-bold mb-4">Tools yang dipakai</h1>
-          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50">Berikut ini beberapa tool yang saya pakai untuk kebutuhan Pengembangan Aplikasi Web: </p>
-          <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Tools yang dipakai</h1>
+          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1500">Berikut ini beberapa tool yang saya pakai untuk kebutuhan Pengembangan Aplikasi Web: </p>
+          <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4" data-aos="fade-up" data-aos-duration="2000">
             {listTools.map((tool) => (
               <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id}>
                 <img src={tool.gambar} alt="Tools Image" className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900" loading="lazy" />
@@ -96,6 +96,25 @@ function App() {
       <div className="kontak mt-32 p-10">
         <h1 className="text-4xl mb-2 font-bold text-center">Kontak</h1>
         <p className="text-base/loose text-center mb-10 opacity-50">Mari terhubung dengan saya</p>
+        <form action="https://formsubmit.co/dendipauguss1111@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="nama" className="font-semibold">Nama Lengkap</label>
+              <input type="text" name="nama" id="nama" placeholder="Masukkan nama ..." className="bg-zinc-500 p-2 rounded-md" required />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="email" className="font-semibold">Email</label>
+              <input type="email" name="email" id="email" placeholder="Masukkan email ..." className="bg-zinc-500 p-2 rounded-md" required />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="pesan" className="font-semibold">Pesan</label>
+              <textarea name="pesan" id="pesan" cols="45" rows="7" className="bg-zinc-500 p-2 rounded-md" required></textarea>
+            </div>
+            <div className="text-center">
+              <button type="submit" className="bg-blue-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-blue-600">Kirim Pesan</button>
+            </div>
+          </div>
+        </form>
       </div>
       {/* Kontak */}
     </>
