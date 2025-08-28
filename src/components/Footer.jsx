@@ -3,9 +3,9 @@ const Footer = () => {
         <div className="mt-32 py-4 flex md:flex-row flex-col justify-between items-center md:gap-0 gap-6">
             <h1 className="text-2xl font-bold">Portfolio</h1>
             <div className="flex gap-7">
-                <a href="#">Beranda</a>
-                <a href="#">Tentang</a>
-                <a href="#">Proyek</a>
+                <a href="#beranda">Beranda</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#proyek">Proyek</a>
             </div>
             <div className="flex items-center gap-3">
                 <a href="https://github.com/dendipauguss/" target="_blank" rel="noopener noreferrer">

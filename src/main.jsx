@@ -11,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
+import ScrollToTopButton from './components/ScrollToTopButton.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <div className='container mx-auto px-5'>
       <Navbar />
       <App />
+      <ScrollToTopButton />
       <Footer />
     </div>
   </StrictMode>,
