@@ -1,7 +1,9 @@
 import HeroImage from "/assets/dendi-img.webp";
+import LogoImage from "/assets/dps-logo.png";
 
 const Image = {
   HeroImage,
+  LogoImage
 };
 
 export default Image;

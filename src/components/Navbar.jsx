@@ -1,3 +1,4 @@
+import DataImage from "../data";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
     return (
         <div
             className={`navbar flex items-center justify-between fixed top-0 lg:px-19 md:px-27 px-5 left-0 w-full z-50 transition-all duration-300
-                ${shrink ? "py-3 bg-white/20 backdrop-blur-md shadow-md" : "py-7 bg-transparent"}`}
+                ${shrink ? "py-3 bg-yellow-600/10 backdrop-blur-md shadow-md" : "py-7 bg-transparent"}`}
         >
 
             {/* Logo */}
@@ -47,7 +48,7 @@ const Navbar = () => {
                         ${!isDesktop && active ? "opacity-0 scale-95 pointer-events-none"
                             : "opacity-100 scale-100"}`}
                 >
-                    DPS Pro
+                    <img src={DataImage.LogoImage} alt="Hero Image" className="w-[60px] md:ml-auto animate__animated animate__fadeInUp animate__delay-3s rounded-3xl" loading="lazy" />
                 </h1>
             </div>
 
@@ -60,6 +61,7 @@ const Navbar = () => {
             >
                 <li><a href="#beranda" className="sm:text-lg text-base font-medium">Beranda</a></li>
                 <li><a href="#tentang" className="sm:text-lg text-base font-medium">Tentang</a></li>
+                <li><a href="#tools" className="sm:text-lg text-base font-medium">Tools</a></li>
                 <li><a href="#proyek" className="sm:text-lg text-base font-medium">Proyek</a></li>
                 <li><a href="#kontak" className="sm:text-lg text-base font-medium">Kontak</a></li>
             </ul>

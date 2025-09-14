@@ -15,7 +15,7 @@ function App() {
             Saya adalah lulusan S1 Informatika yang memiliki ketertarikan besar pada dunia teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Selama studi, saya telah mengerjakan beberapa proyek pribadi dan tugas kuliah menggunakan HTML, CSS (Bootstrap), JavaScript, PHP, serta framework CodeIgniter dan Laravel. Saya juga terbiasa menggunakan MySQL, Git, dan cPanel, serta saat ini tengah mempelajari React.js dan Node.js untuk memperluas kompetensi saya. Saya antusias untuk terus belajar dan siap berkontribusi dalam tim pengembangan teknologi. {/* Saya bercita-cita berkarier di bidang teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Saya menguasai teknologi pengembangan full-stack seperti Laravel, CodeIgniter, serta ekosistem JavaScript modern termasuk React.js, Express.js, dan Next.js. Kemampuan inti saya mencakup PHP, JavaScript, Node.js, dan arsitektur aplikasi web modern. */}
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="#" className="bg-blue-700 p-4 rounded-2xl hover:bg-blue-600">
+            <a href="#" className="bg-yellow-500 p-4 rounded-2xl hover:bg-blue-400">
               Download CV <i className="ri-download-2-line ri-md"></i>
             </a>
             <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
@@ -27,7 +27,7 @@ function App() {
       </div>
 
       {/* Tentang */}
-      <div className="tentang mt-32 py-10" id="tentang">
+      <div className="tentang mt-32 py-10 scroll-mt-20" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
           <p className="text-base/loose mb-10">
@@ -48,7 +48,7 @@ function App() {
           </div>
         </div>
 
-        <div className="tools mt-32">
+        <div className="tools mt-32 scroll-mt-24" id="tools">
           <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tools yang dipakai</h1>
           <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Berikut ini beberapa tool yang saya pakai untuk kebutuhan Pengembangan Aplikasi Web: </p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
@@ -67,7 +67,7 @@ function App() {
       {/* Tentang */}
 
       {/* Proyek */}
-      <div className="proyek mt-32 py-10" id="proyek">
+      <div className="proyek mt-32 py-10 scroll-mt-20" id="proyek">
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">Proyek</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">Berikut proyek yang sudah selesai dibuat :</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
@@ -93,7 +93,7 @@ function App() {
       {/* Proyek */}
 
       {/* Kontak */}
-      <div className="kontak mt-32 p-10" id="kontak">
+      <div className="kontak mt-32 p-10 scroll-mt-20" id="kontak">
         <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Kontak</h1>
         <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Mari terhubung dengan saya</p>
         <form action="https://formsubmit.co/dendipauguss1111@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
