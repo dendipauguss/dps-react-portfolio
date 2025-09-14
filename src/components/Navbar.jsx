@@ -1,57 +1,69 @@
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-    const [shrink, setShrink] = useState(false);
+    const [active, setActive] = useState(false);   // untuk mobile
+    const [shrink, setShrink] = useState(false);   // untuk desktop
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
     useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 768);
+        };
+        window.addEventListener("resize", handleResize);
+
         const handleScroll = () => {
-            setShrink(window.scrollY > 150);
+            if (window.scrollY > 150) {
+                setActive(true);
+                if (window.innerWidth >= 768) {
+                    setShrink(true);
+                }
+            } else {
+                setActive(false);
+                if (window.innerWidth >= 768) {
+                    setShrink(false);
+                }
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
         <div
-            className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 transition-all duration-300 ${shrink
-                    ? "py-3 bg-white/30 backdrop-blur-md shadow-md"
-                    : "py-7 bg-transparent"
-                }`}
+            className={`navbar flex items-center justify-between fixed top-0 lg:px-19 md:px-27 px-5 left-0 w-full z-50 transition-all duration-300
+                ${shrink ? "py-3 bg-white/20 backdrop-blur-md shadow-md" : "py-7 bg-transparent"}`}
         >
+
             {/* Logo */}
-            <div className="logo transition-all duration-300">
+            <div className="logo">
                 <h1
-                    className={`font-bold text-white transition-all duration-300 ${shrink ? "text-2xl" : "text-3xl"
-                        }`}
+                    className={`font-bold transition-all duration-300 lg:ms-5 
+                        ${shrink ? "text-2xl text-white" : "text-3xl text-white"} 
+                        ${!isDesktop && active ? "opacity-0 scale-95 pointer-events-none"
+                            : "opacity-100 scale-100"}`}
                 >
-                    Portfolio
+                    DPS Pro
                 </h1>
             </div>
 
             {/* Menu */}
-            <ul className="flex items-center gap-8">
-                <li>
-                    <a href="#beranda" className="text-white font-medium hover:opacity-80">
-                        Beranda
-                    </a>
-                </li>
-                <li>
-                    <a href="#tentang" className="text-white font-medium hover:opacity-80">
-                        Tentang
-                    </a>
-                </li>
-                <li>
-                    <a href="#proyek" className="text-white font-medium hover:opacity-80">
-                        Proyek
-                    </a>
-                </li>
-                <li>
-                    <a href="#kontak" className="text-white font-medium hover:opacity-80">
-                        Kontak
-                    </a>
-                </li>
+            <ul
+                className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2 
+                    md:-translate-x-0 md:opacity-100 bg-white/30 md:backdrop-blur-none backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl 
+                    md:bg-transparent transition-all md:transition-none z-40 
+                    ${active ? "top-1 opacity-100" : "-top-10 opacity-0"}`}
+            >
+                <li><a href="#beranda" className="sm:text-lg text-base font-medium">Beranda</a></li>
+                <li><a href="#tentang" className="sm:text-lg text-base font-medium">Tentang</a></li>
+                <li><a href="#proyek" className="sm:text-lg text-base font-medium">Proyek</a></li>
+                <li><a href="#kontak" className="sm:text-lg text-base font-medium">Kontak</a></li>
             </ul>
+
         </div>
     );
 };
