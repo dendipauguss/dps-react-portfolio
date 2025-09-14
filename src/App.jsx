@@ -12,7 +12,7 @@ function App() {
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">Hai, saya Dendi Paugus Sukmaya</h1>
           <p className="text-base/loose mb-6 opacity-50">
-            Saya adalah lulusan baru dengan gelar Sarjana Teknik Informatika dari Universitas Majalengka. Saya memiliki ketertarikan untuk terus mengikuti perkembangan teknologi terbaru serta menerapkan prinsip-prinsip object-oriented dalam pengembangan perangkat lunak. {/* Saya bercita-cita berkarier di bidang teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Saya menguasai teknologi pengembangan full-stack seperti Laravel, CodeIgniter, serta ekosistem JavaScript modern termasuk React.js, Express.js, dan Next.js. Kemampuan inti saya mencakup PHP, JavaScript, Node.js, dan arsitektur aplikasi web modern. */}
+            Saya adalah lulusan S1 Informatika yang memiliki ketertarikan besar pada dunia teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Selama studi, saya telah mengerjakan beberapa proyek pribadi dan tugas kuliah menggunakan HTML, CSS (Bootstrap), JavaScript, PHP, serta framework CodeIgniter dan Laravel. Saya juga terbiasa menggunakan MySQL, Git, dan cPanel, serta saat ini tengah mempelajari React.js dan Node.js untuk memperluas kompetensi saya. Saya antusias untuk terus belajar dan siap berkontribusi dalam tim pengembangan teknologi. {/* Saya bercita-cita berkarier di bidang teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Saya menguasai teknologi pengembangan full-stack seperti Laravel, CodeIgniter, serta ekosistem JavaScript modern termasuk React.js, Express.js, dan Next.js. Kemampuan inti saya mencakup PHP, JavaScript, Node.js, dan arsitektur aplikasi web modern. */}
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
             <a href="#" className="bg-blue-700 p-4 rounded-2xl hover:bg-blue-600">
@@ -31,13 +31,13 @@ function App() {
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
           <p className="text-base/loose mb-10">
-            Saya adalah lulusan baru dengan gelar Sarjana Teknik Informatika dari Universitas Majalengka. Saya memiliki ketertarikan untuk terus mengikuti perkembangan teknologi terbaru serta menerapkan prinsip-prinsip object-oriented dalam pengembangan perangkat lunak. Saya bercita-cita berkarier di bidang teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Saya menguasai teknologi pengembangan full-stack seperti Laravel, CodeIgniter, serta ekosistem JavaScript modern termasuk React.js, Express.js, dan Next.js. Kemampuan inti saya mencakup PHP, JavaScript, Node.js, dan arsitektur aplikasi web modern.
+            Saya adalah lulusan baru S1 Informatika dari Universitas Majalengka yang memiliki ketertarikan besar pada dunia teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Selama studi, saya telah mengerjakan beberapa proyek pribadi dan tugas kuliah menggunakan HTML, CSS (Bootstrap), JavaScript, PHP, serta framework CodeIgniter dan Laravel. Saya juga terbiasa menggunakan MySQL, Git, dan cPanel, serta saat ini tengah mempelajari React.js dan Node.js untuk memperluas kompetensi saya. Saya antusias untuk terus belajar dan siap berkontribusi dalam tim pengembangan teknologi.
           </p>
           <div className="flex items-center justify-between">
             <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md sm:block hidden" loading="lazy" />
             <div className="flex items-center gap-6">
               <div>
-                <h1 className="text-4xl mb-1">45 <span className="text-blue-500">+</span></h1>
+                <h1 className="text-4xl mb-1">2 <span className="text-blue-500">+</span></h1>
                 <p>Proyek Selesai</p>
               </div>
               <div>

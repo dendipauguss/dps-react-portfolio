@@ -1,44 +1,59 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
-    const [active, setActive] = useState(false);
+    const [shrink, setShrink] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 150) {
-                setActive(true);
-            } else {
-                setActive(false);
-            }
+            setShrink(window.scrollY > 150);
         };
 
         window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        }
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
-        <div className="navbar py-7 flex items-center justify-between">
-            <div className="logo">
-                <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white">Portfolio</h1>
+        <div
+            className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 transition-all duration-300 ${shrink
+                    ? "py-3 bg-white/30 backdrop-blur-md shadow-md"
+                    : "py-7 bg-transparent"
+                }`}
+        >
+            {/* Logo */}
+            <div className="logo transition-all duration-300">
+                <h1
+                    className={`font-bold text-white transition-all duration-300 ${shrink ? "text-2xl" : "text-3xl"
+                        }`}
+                >
+                    Portfolio
+                </h1>
             </div>
-            <ul className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2 md:-translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl md:bg-transparent transition-all md:transition-none z-40 ${active ? "top-1 opacity-100" : "-top-10 opacity-0"}`}>
+
+            {/* Menu */}
+            <ul className="flex items-center gap-8">
                 <li>
-                    <a href="#beranda" className="sm:text-lg text-base font-medium">Beranda</a>
+                    <a href="#beranda" className="text-white font-medium hover:opacity-80">
+                        Beranda
+                    </a>
                 </li>
                 <li>
-                    <a href="#tentang" className="sm:text-lg text-base font-medium">Tentang</a>
+                    <a href="#tentang" className="text-white font-medium hover:opacity-80">
+                        Tentang
+                    </a>
                 </li>
                 <li>
-                    <a href="#proyek" className="sm:text-lg text-base font-medium">Proyek</a>
+                    <a href="#proyek" className="text-white font-medium hover:opacity-80">
+                        Proyek
+                    </a>
                 </li>
                 <li>
-                    <a href="#kontak" className="sm:text-lg text-base font-medium">Kontak</a>
+                    <a href="#kontak" className="text-white font-medium hover:opacity-80">
+                        Kontak
+                    </a>
                 </li>
             </ul>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
