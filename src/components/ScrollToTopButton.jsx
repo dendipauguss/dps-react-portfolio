@@ -22,9 +22,9 @@ function ScrollToTopButton() {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed bottom-6 right-6 bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-500 ${visible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10 pointer-events-none"
+            className={`fixed bottom-6 right-6 bg-yellow-700 text-white p-3 rounded-full shadow-lg transition-all duration-500 ${visible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10 pointer-events-none"
                 }`}
         >
             <i className="ri-arrow-up-line"></i>

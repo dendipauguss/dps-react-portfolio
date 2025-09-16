@@ -1,19 +1,20 @@
 import DataImage from "./data";
+import Typewriter from "./components/Typewriter";
 import { listTools, listProyek } from "./data";
 
 function App() {
+  const teks = ["Full-stack Web Developer", "IoT Engineer", "Graphic Designer"];
+
   return (
     <div className="pt-24">
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div className="animate__animated animate__fadeInUp animate__delay-3s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
-            <q>Kode yang indah lahir dari pengalaman. 😎</q>
+            <q>Beautiful code is born from experience. 😎</q>
           </div>
-          <h1 className="text-5xl/tight font-bold mb-6">Hai, saya Dendi Paugus Sukmaya</h1>
-          <p className="text-base/loose mb-6 opacity-50">
-            Saya adalah lulusan S1 Informatika yang memiliki ketertarikan besar pada dunia teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Selama studi, saya telah mengerjakan beberapa proyek pribadi dan tugas kuliah menggunakan HTML, CSS (Bootstrap), JavaScript, PHP, serta framework CodeIgniter dan Laravel. Saya juga terbiasa menggunakan MySQL, Git, dan cPanel, serta saat ini tengah mempelajari React.js dan Node.js untuk memperluas kompetensi saya. Saya antusias untuk terus belajar dan siap berkontribusi dalam tim pengembangan teknologi. {/* Saya bercita-cita berkarier di bidang teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Saya menguasai teknologi pengembangan full-stack seperti Laravel, CodeIgniter, serta ekosistem JavaScript modern termasuk React.js, Express.js, dan Next.js. Kemampuan inti saya mencakup PHP, JavaScript, Node.js, dan arsitektur aplikasi web modern. */}
-          </p>
+          <h1 className="text-5xl/tight font-bold mb-6">Hi, I'm Dendi Paugus Sukmaya</h1>
+          <Typewriter texts={teks} />
           <div className="flex items-center sm:gap-4 gap-2">
             <a href="#" className="bg-yellow-500 p-4 rounded-2xl hover:bg-blue-400">
               Download CV <i className="ri-download-2-line ri-md"></i>
@@ -31,26 +32,27 @@ function App() {
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
           <p className="text-base/loose mb-10">
-            Saya adalah lulusan baru S1 Informatika dari Universitas Majalengka yang memiliki ketertarikan besar pada dunia teknologi informasi, khususnya dalam pengembangan dan pemeliharaan aplikasi web. Selama studi, saya telah mengerjakan beberapa proyek pribadi dan tugas kuliah menggunakan HTML, CSS (Bootstrap), JavaScript, PHP, serta framework CodeIgniter dan Laravel. Saya juga terbiasa menggunakan MySQL, Git, dan cPanel, serta saat ini tengah mempelajari React.js dan Node.js untuk memperluas kompetensi saya. Saya antusias untuk terus belajar dan siap berkontribusi dalam tim pengembangan teknologi.
+            I am a recent Informatics graduate from Majalengka University with a strong interest in information technology, particularly in web application development and maintenance. During my studies, I have worked on several personal projects and coursework using HTML, CSS (Bootstrap), JavaScript, PHP, and the CodeIgniter and Laravel frameworks. I am also familiar with MySQL, Git, and cPanel, and am currently learning React.js and Node.js to expand my skills. I am enthusiastic about continuing to learn and ready to contribute to the technology development team.
           </p>
           <div className="flex items-center justify-between">
             <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md sm:block hidden" loading="lazy" />
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">2 <span className="text-blue-500">+</span></h1>
-                <p>Proyek Selesai</p>
+                <p>Completed Projects</p>
               </div>
               <div>
                 <h1 className="text-4xl mb-1">2 <span className="text-blue-500">+</span></h1>
-                <p>Pengalaman</p>
+                <p>Experience</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="tools mt-32 scroll-mt-24" id="tools">
-          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tools yang dipakai</h1>
-          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Berikut ini beberapa tool yang saya pakai untuk kebutuhan Pengembangan Aplikasi Web: </p>
+          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tools and Programming Languages Used</h1>
+          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+            Here are some of the tools and programming languages I use for Web Application Development, IoT Engineering, and Graphic Design: </p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             {listTools.map((tool) => (
               <div key={tool.id} className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay={tool.dad} data-aos-once="true">

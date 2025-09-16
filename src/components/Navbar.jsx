@@ -59,11 +59,11 @@ const Navbar = () => {
                     md:bg-transparent transition-all md:transition-none z-40 
                     ${active ? "top-1 opacity-100" : "-top-10 opacity-0"}`}
             >
-                <li><a href="#beranda" className="sm:text-lg text-base font-medium">Beranda</a></li>
-                <li><a href="#tentang" className="sm:text-lg text-base font-medium">Tentang</a></li>
+                <li><a href="#beranda" className="sm:text-lg text-base font-medium">Home</a></li>
+                <li><a href="#tentang" className="sm:text-lg text-base font-medium">About</a></li>
                 <li><a href="#tools" className="sm:text-lg text-base font-medium">Tools</a></li>
-                <li><a href="#proyek" className="sm:text-lg text-base font-medium">Proyek</a></li>
-                <li><a href="#kontak" className="sm:text-lg text-base font-medium">Kontak</a></li>
+                <li><a href="#proyek" className="sm:text-lg text-base font-medium">Project</a></li>
+                <li><a href="#kontak" className="sm:text-lg text-base font-medium">Contact</a></li>
             </ul>
 
         </div>
