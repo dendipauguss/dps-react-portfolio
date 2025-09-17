@@ -63,6 +63,7 @@ const Navbar = () => {
                 <li><a href="#tentang" className="sm:text-lg text-base font-medium">About</a></li>
                 <li><a href="#tools" className="sm:text-lg text-base font-medium">Tools</a></li>
                 <li><a href="#proyek" className="sm:text-lg text-base font-medium">Project</a></li>
+                <li><a href="#sertifikasi" className="sm:text-lg text-base font-medium">Certified</a></li>
                 <li><a href="#kontak" className="sm:text-lg text-base font-medium">Contact</a></li>
             </ul>
 

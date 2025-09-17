@@ -162,7 +162,7 @@ export const listProyek = [
     nama: "Academic Quality Assurance Information System",
     desk: "A web-based academic quality assurance system for Muhammadiyah University of Cirebon. An administrator dashboard has been developed and maintained to manage internal quality audits, lecturer performance monitoring, and academic reporting. The public site displays general information, while key features are accessible through registered admin and user logins within the university.",
     tools: ["HTML", "Bootstrap", "Javascript", "Codeigniter 3", "MySQL"],
-    link: "https://mutu.umc.ac.id/",
+    links: ["https://mutu.umc.ac.id/"],
     dad: "200",
   },
   {
@@ -171,7 +171,16 @@ export const listProyek = [
     nama: "Lecturer Performance Assessment Information System",
     desk: "This project, a Lecturer Performance Assessment Information System (SI-PKD), was developed to support a more efficient, transparent, and accountable lecturer performance evaluation process. This system allows lecturers to independently input their performance achievements and provides management with access to validate, assess, and report performance results. With this system, the previously manual performance assessment process can be accelerated and the potential for error minimized, while simultaneously improving the accuracy of data used in managerial decision-making at universities.",
     tools: ["HTML", "Bootstrap", "Javascript", "Laravel", "MySQL"],
-    link: "https://sikap.unma.ac.id/",
+    links: ["https://sikap.unma.ac.id/"],
     dad: "200",
   },
+  // {
+  //   id: 3,
+  //   gambar: Proyek2,
+  //   nama: "Integrating Micro-Hydro Power Plants with an Internet of Things (IoT)-Based Monitoring System",
+  //   desk: "This project, a Lecturer Performance Assessment Information System (SI-PKD), was developed to support a more efficient, transparent, and accountable lecturer performance evaluation process. This system allows lecturers to independently input their performance achievements and provides management with access to validate, assess, and report performance results. With this system, the previously manual performance assessment process can be accelerated and the potential for error minimized, while simultaneously improving the accuracy of data used in managerial decision-making at universities.",
+  //   tools: ["HTML", "Bootstrap", "Javascript", "Laravel", "MySQL"],
+  //   links: ["https://www.youtube.com/watch?v=SS2p-KYn-zA&t=54s", "https://www.youtube.com/watch?v=kmsNVPAtx5I", "https://www.youtube.com/watch?v=vZU5fVxkC3k"],
+  //   dad: "300",
+  // },
 ];

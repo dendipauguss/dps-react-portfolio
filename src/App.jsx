@@ -38,7 +38,7 @@ function App() {
             <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md sm:block hidden" loading="lazy" />
             <div className="flex items-center gap-6">
               <div>
-                <h1 className="text-4xl mb-1">2 <span className="text-blue-500">+</span></h1>
+                <h1 className="text-4xl mb-1">{listProyek.length} <span className="text-blue-500">+</span></h1>
                 <p>Completed Projects</p>
               </div>
               <div>
@@ -85,7 +85,9 @@ function App() {
                   ))}
                 </div>
                 <div className="mt-8 text-center">
-                  <a href={proyek.link} className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600" target="_blank">{proyek.link}</a>
+                  {proyek.links.map((link, index) => (
+                    <a key={index} href={link} className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600" target="_blank">{link}</a>
+                  ))}
                 </div>
               </div>
             </div>
