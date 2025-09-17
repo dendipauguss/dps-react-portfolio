@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')).render(
       <Navbar />
       <App />
       <ScrollToTopButton />
-      <Footer />
     </div>
+    <Footer />
   </StrictMode>,
 )

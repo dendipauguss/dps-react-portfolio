@@ -1,34 +1,50 @@
-const Footer = () => {
-    return (
-        <div className="mt-32 py-4 flex md:flex-row flex-col justify-between items-center md:gap-0 gap-6">
-            <h1 className="text-2xl font-bold">Portfolio</h1>
-            <div className="flex gap-7">
-                <a href="#beranda" className="sm:text-lg text-base font-medium">Home</a>
-                <a href="#tentang" className="sm:text-lg text-base font-medium">About</a>
-                <a href="#tools" className="sm:text-lg text-base font-medium">Tools</a>
-                <a href="#proyek" className="sm:text-lg text-base font-medium">Project</a>
-                <a href="#sertifikasi" className="sm:text-lg text-base font-medium">Certified</a>
-                <a href="#kontak" className="sm:text-lg text-base font-medium">Contact</a>
-            </div>
-            <div className="flex items-center gap-3">
-                <a href="https://github.com/dendipauguss/" target="_blank" rel="noopener noreferrer">
-                    <i className="ri-github-fill ri-2x"></i>
-                </a>
-                <a href="https://linkedin.com/in/dendi-paugus-sukmaya" target="_blank" rel="noopener noreferrer">
-                    <i className="ri-linkedin-fill ri-2x"></i>
-                </a>
-                <a href="https://www.instagram.com/_denpau89/" target="_blank" rel="noopener noreferrer">
-                    <i className="ri-instagram-fill ri-2x"></i>
-                </a>
-                {/* <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i className="ri-reddit-fill ri-2x"></i>
-                </a> */}
-                <a href="https://www.youtube.com/@dendipaugussukmaya3303" target="_blank" rel="noopener noreferrer">
-                    <i className="ri-youtube-fill ri-2x"></i>
-                </a>
-            </div>
-        </div>
-    )
-}
+import Typewriter from "./Typewriter";
 
-export default Footer
+const Footer = () => {
+
+    const teks = ["Full-stack Web Developer", "IoT Engineer", "Graphic Designer"];
+
+    return (
+        <footer className="w-full bg-zinc-600 text-white py-10 px-10">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
+
+                {/* Bagian Kiri */}
+                <div className="text-center md:text-left">
+                    <h1 className="text-2xl font-bold">Dendi Paugus Sukmaya</h1>
+                    <p className="text-sm mt-2">
+                        <Typewriter texts={teks} fontSize={"text-2xl/normal"} />
+                    </p>
+                    <div className="flex gap-4 justify-center md:justify-start mt-4">
+                        <a href="https://linkedin.com/in/dendi-paugus-sukmaya" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
+                            <i className="ri-linkedin-fill ri-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_denpau89/" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
+                            <i className="ri-instagram-line ri-xl"></i>
+                        </a>
+                        <a href="https://github.com/dendipauguss" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
+                            <i className="ri-github-line ri-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@dendipaugussukmaya3303" target="_blank" rel="noopener noreferrer">
+                            <i className="ri-youtube-fill ri-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                {/* Bagian Kanan */}
+                <div className="text-center md:text-right">
+                    <div className="flex flex-wrap gap-6 justify-center md:justify-end text-sm mb-3">
+                        <a href="#about" className="hover:underline text-xl">About</a>
+                        <a href="#projects" className="hover:underline text-xl">Projects</a>
+                        <a href="#experience" className="hover:underline text-xl">Experience</a>
+                        <a href="#education" className="hover:underline text-xl">Education</a>
+                    </div>
+                    <p className="text-xl opacity-80">
+                        © 2025 Dendi Paugus Sukmaya. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

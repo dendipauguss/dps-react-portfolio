@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Typewriter = ({ texts }) => {
+const Typewriter = ({ texts, fontSize = "text-3xl/normal" }) => {
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);
     const [deleting, setDeleting] = useState(false);
@@ -31,7 +31,7 @@ const Typewriter = ({ texts }) => {
 
     return (
         <div className="flex justify-start mb-6">
-            <h1 className="text-3xl/normal font-mono text-white border-r-2 border-orange-400 pr-2 min-h-[1em] opacity-65">
+            <h1 className={`${fontSize} font-mono text-white border-r-2 border-orange-400 pr-2 min-h-[1em] opacity-65`}>
                 {subIndex === 0
                     ? <span className="invisible">_</span>
                     : texts[index].substring(0, subIndex)
