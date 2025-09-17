@@ -174,13 +174,13 @@ export const listProyek = [
     links: ["https://sikap.unma.ac.id/"],
     dad: "200",
   },
-  // {
-  //   id: 3,
-  //   gambar: Proyek2,
-  //   nama: "Integrating Micro-Hydro Power Plants with an Internet of Things (IoT)-Based Monitoring System",
-  //   desk: "This project, a Lecturer Performance Assessment Information System (SI-PKD), was developed to support a more efficient, transparent, and accountable lecturer performance evaluation process. This system allows lecturers to independently input their performance achievements and provides management with access to validate, assess, and report performance results. With this system, the previously manual performance assessment process can be accelerated and the potential for error minimized, while simultaneously improving the accuracy of data used in managerial decision-making at universities.",
-  //   tools: ["HTML", "Bootstrap", "Javascript", "Laravel", "MySQL"],
-  //   links: ["https://www.youtube.com/watch?v=SS2p-KYn-zA&t=54s", "https://www.youtube.com/watch?v=kmsNVPAtx5I", "https://www.youtube.com/watch?v=vZU5fVxkC3k"],
-  //   dad: "300",
-  // },
+  {
+    id: 3,
+    gambar: Proyek3,
+    nama: "Integrating Micro-Hydro Power Plants with an Internet of Things (IoT)-Based Monitoring System",
+    desk: "Integration of Microhydro Power Plants with an Internet of Things (IoT)-Based Monitoring System. This is a social project of Innovillage 2023 held by PT. Telkom Indonesia. The goal is to monitor the microhydro power plant equipment at the Ciremai Climbing Basecamp via Apuy, Argamukti Village, Argapura District, Majalengka Regency. The IoT integration uses the main electronic device, namely ESP32 and monitoring via Blynk.io.",
+    tools: ["ESP32", "C++", "Arduino", "Blynk.io"],
+    links: ["https://www.youtube.com/watch?v=SS2p-KYn-zA&t=54s", "https://www.youtube.com/watch?v=kmsNVPAtx5I", "https://www.youtube.com/watch?v=vZU5fVxkC3k"],
+    dad: "300",
+  },
 ];
