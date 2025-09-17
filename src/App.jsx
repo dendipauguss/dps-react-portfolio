@@ -28,7 +28,7 @@ function App() {
       </div>
 
       {/* Tentang */}
-      <div className="tentang mt-32 py-10 scroll-mt-20" id="tentang">
+      <div className="tentang mt-10 py-10 scroll-mt-20" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
           <p className="text-2xl/loose mb-10">
@@ -49,7 +49,7 @@ function App() {
           </div>
         </div>
 
-        <div className="tools mt-32 scroll-mt-24" id="tools">
+        <div className="tools mt-10 scroll-mt-24" id="tools">
           <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tools and Programming Languages Used</h1>
           <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
             Here are some of the tools and programming languages I use for Web Application Development, IoT Engineering, and Graphic Design: </p>
@@ -69,7 +69,7 @@ function App() {
       {/* Tentang */}
 
       {/* Proyek */}
-      <div className="proyek mt-32 py-10 scroll-mt-20" id="proyek">
+      <div className="proyek mt-10 py-10 scroll-mt-20" id="proyek">
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">Projects</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">The following projects have been completed:</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
@@ -97,7 +97,7 @@ function App() {
       {/* Proyek */}
 
       {/* Kontak */}
-      <div className="kontak mt-32 p-10 scroll-mt-20" id="kontak">
+      <div className="kontak mt-10 py-10 scroll-mt-20" id="kontak">
         <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Contact</h1>
         <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Come connect with me</p>
         <form action="https://formsubmit.co/dendipauguss1111@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
