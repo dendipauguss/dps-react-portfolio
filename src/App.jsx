@@ -31,7 +31,7 @@ function App() {
       <div className="tentang mt-32 py-10 scroll-mt-20" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
-          <p className="text-base/loose mb-10">
+          <p className="text-2xl/loose mb-10">
             I am a recent Informatics graduate from Majalengka University with a strong interest in information technology, particularly in web application development and maintenance. During my studies, I have worked on several personal projects and coursework using HTML, CSS (Bootstrap), JavaScript, PHP, and the CodeIgniter and Laravel frameworks. I am also familiar with MySQL, Git, and cPanel, and am currently learning React.js and Node.js to expand my skills. I am enthusiastic about continuing to learn and ready to contribute to the technology development team.
           </p>
           <div className="flex items-center justify-between">
