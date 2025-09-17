@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="text-center md:text-left">
                     <h1 className="text-2xl font-bold">Dendi Paugus Sukmaya</h1>
                     <p className="text-sm mt-2">
-                        <Typewriter texts={teks} fontSize={"text-2xl/normal"} />
+                        <Typewriter texts={teks} fontSize={"text-xl"} mode="static" />
                     </p>
                     <div className="flex gap-4 justify-center md:justify-start mt-4">
                         <a href="https://linkedin.com/in/dendi-paugus-sukmaya" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
@@ -33,10 +33,12 @@ const Footer = () => {
                 {/* Bagian Kanan */}
                 <div className="text-center md:text-right">
                     <div className="flex flex-wrap gap-6 justify-center md:justify-end text-sm mb-3">
-                        <a href="#about" className="hover:underline text-xl">About</a>
-                        <a href="#projects" className="hover:underline text-xl">Projects</a>
-                        <a href="#experience" className="hover:underline text-xl">Experience</a>
-                        <a href="#education" className="hover:underline text-xl">Education</a>
+                        <a href="#beranda" className="hover:underline text-xl">Home</a>
+                        <a href="#tentang" className="hover:underline text-xl">About</a>
+                        <a href="#tools" className="hover:underline text-xl">Tools</a>
+                        <a href="#proyek" className="hover:underline text-xl">Projects</a>
+                        {/* <a href="#pengalaman" className="hover:underline text-xl">Work Experience</a> */}
+                        <a href="#kontak" className="hover:underline text-xl">Contact</a>
                     </div>
                     <p className="text-xl opacity-80">
                         © 2025 Dendi Paugus Sukmaya. All rights reserved.

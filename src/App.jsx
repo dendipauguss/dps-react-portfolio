@@ -70,8 +70,8 @@ function App() {
 
       {/* Proyek */}
       <div className="proyek mt-32 py-10 scroll-mt-20" id="proyek">
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">Proyek</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">Berikut proyek yang sudah selesai dibuat :</p>
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">Projects</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">The following projects have been completed:</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
             <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay={proyek.dad} data-aos-once="true">
@@ -98,24 +98,24 @@ function App() {
 
       {/* Kontak */}
       <div className="kontak mt-32 p-10 scroll-mt-20" id="kontak">
-        <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Kontak</h1>
-        <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Mari terhubung dengan saya</p>
+        <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Contact</h1>
+        <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Come connect with me</p>
         <form action="https://formsubmit.co/dendipauguss1111@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
-              <label htmlFor="nama" className="font-semibold">Nama Lengkap</label>
-              <input type="text" name="nama" id="nama" placeholder="Masukkan nama ..." className="bg-zinc-500 p-2 rounded-md" required />
+              <label htmlFor="nama" className="font-semibold">Full Name</label>
+              <input type="text" name="nama" id="nama" placeholder="Enter a name ..." className="bg-zinc-500 p-2 rounded-md" required />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="email" className="font-semibold">Email</label>
-              <input type="email" name="email" id="email" placeholder="Masukkan email ..." className="bg-zinc-500 p-2 rounded-md" required />
+              <input type="email" name="email" id="email" placeholder="Enter an email ..." className="bg-zinc-500 p-2 rounded-md" required />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="pesan" className="font-semibold">Pesan</label>
+              <label htmlFor="pesan" className="font-semibold">Message</label>
               <textarea name="pesan" id="pesan" cols="45" rows="7" className="bg-zinc-500 p-2 rounded-md" required></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" className="bg-blue-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-blue-600">Kirim Pesan</button>
+              <button type="submit" className="bg-blue-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-blue-600">Send Message</button>
             </div>
           </div>
         </form>
