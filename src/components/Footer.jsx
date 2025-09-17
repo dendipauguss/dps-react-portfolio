@@ -3,9 +3,12 @@ const Footer = () => {
         <div className="mt-32 py-4 flex md:flex-row flex-col justify-between items-center md:gap-0 gap-6">
             <h1 className="text-2xl font-bold">Portfolio</h1>
             <div className="flex gap-7">
-                <a href="#beranda">Beranda</a>
-                <a href="#tentang">Tentang</a>
-                <a href="#proyek">Proyek</a>
+                <a href="#beranda" className="sm:text-lg text-base font-medium">Home</a>
+                <a href="#tentang" className="sm:text-lg text-base font-medium">About</a>
+                <a href="#tools" className="sm:text-lg text-base font-medium">Tools</a>
+                <a href="#proyek" className="sm:text-lg text-base font-medium">Project</a>
+                <a href="#sertifikasi" className="sm:text-lg text-base font-medium">Certified</a>
+                <a href="#kontak" className="sm:text-lg text-base font-medium">Contact</a>
             </div>
             <div className="flex items-center gap-3">
                 <a href="https://github.com/dendipauguss/" target="_blank" rel="noopener noreferrer">
@@ -17,9 +20,9 @@ const Footer = () => {
                 <a href="https://www.instagram.com/_denpau89/" target="_blank" rel="noopener noreferrer">
                     <i className="ri-instagram-fill ri-2x"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                {/* <a href="#" target="_blank" rel="noopener noreferrer">
                     <i className="ri-reddit-fill ri-2x"></i>
-                </a>
+                </a> */}
                 <a href="https://www.youtube.com/@dendipaugussukmaya3303" target="_blank" rel="noopener noreferrer">
                     <i className="ri-youtube-fill ri-2x"></i>
                 </a>

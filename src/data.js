@@ -151,7 +151,7 @@ export const listTools = [
 import Proyek1 from "/assets/proyek/proyek1.webp";
 import Proyek2 from "/assets/proyek/proyek2.webp";
 import Proyek3 from "/assets/proyek/proyek3.webp";
-// import Proyek4 from "/assets/proyek/proyek4.webp";
+import Proyek4 from "/assets/proyek/proyek4.webp";
 // import Proyek5 from "/assets/proyek/proyek5.webp";
 // import Proyek6 from "/assets/proyek/proyek6.webp";
 
@@ -182,5 +182,14 @@ export const listProyek = [
     tools: ["ESP32", "C/C++", "Arduino", "Blynk.io"],
     links: ["https://www.youtube.com/watch?v=SS2p-KYn-zA&t=54s", "https://www.youtube.com/watch?v=kmsNVPAtx5I", "https://www.youtube.com/watch?v=vZU5fVxkC3k"],
     dad: "300",
+  },
+  {
+    id: 4,
+    gambar: Proyek4,
+    nama: "1 Minute 2D Animation using Toon Boom Harmony 17",
+    desk: "The animation project “KUALAT IS REAL” is a 2D Animation course assignment that I worked on using Toon Boom Harmony 17 for animation creation, CorelDraw X7 for background design, and Sony Vegas Pro 13 for final editing. This animation conveys a moral message about the importance of respecting others, by conveying that every action has its consequences—in line with the meaning of “kualat” in Indonesian culture.",
+    tools: ["Harmony", "Vegas Pro", "CorelDraw"],
+    links: ["https://youtu.be/EIy-OZB8ng0?si=lRgHeCNOsukxc4a5"],
+    dad: "400",
   },
 ];
