@@ -85,7 +85,7 @@ function App() {
                   ))}
                 </div>
                 <div className="mt-8 text-center">
-                  <a href="#" className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600">Lihat Website</a>
+                  <a href={proyek.link} className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600" target="_blank">{proyek.link}</a>
                 </div>
               </div>
             </div>

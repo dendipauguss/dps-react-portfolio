@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/dd29a008-962e-4d03-b5f8-6f90707911cd/project_sipkd.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250917%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250917T031406Z&X-Amz-Expires=86400&X-Amz-Signature=d67a6c2a14a5b33dce17346a975f8d1ac1465b02804fe0365af428b5a1e86ac2&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22project_sipkd.webp%22&response-content-type=image%2Fwebp&x-id=GetObject
