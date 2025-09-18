@@ -37,7 +37,7 @@ const Footer = () => {
                         <a href="#tentang" className="hover:underline text-xl">About</a>
                         <a href="#tools" className="hover:underline text-xl">Tools</a>
                         <a href="#proyek" className="hover:underline text-xl">Projects</a>
-                        {/* <a href="#pengalaman" className="hover:underline text-xl">Work Experience</a> */}
+                        <a href="#pengalaman" className="hover:underline text-xl">Work Experience</a>
                         <a href="#kontak" className="hover:underline text-xl">Contact</a>
                     </div>
                     <p className="text-xl opacity-80">

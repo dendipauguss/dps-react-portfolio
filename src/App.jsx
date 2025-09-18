@@ -1,6 +1,6 @@
 import DataImage from "./data";
 import Typewriter from "./components/Typewriter";
-import { listTools, listProyek } from "./data";
+import { listTools, listProyek, listPengalaman } from "./data";
 
 function App() {
   const teks = ["Full-stack Web Developer", "IoT Engineer", "Graphic Designer"];
@@ -95,6 +95,26 @@ function App() {
         </div>
       </div>
       {/* Proyek */}
+
+      {/* Pengalaman */}
+      <div className="kontak mt-10 py-10 scroll-mt-20" id="pengalaman">
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">Work Experience</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">Some work experience during or after education:</p>
+        <div className="proyek-box mt-14">
+          {listPengalaman.map((pengalaman) => (
+            <div key={pengalaman.id} className="p-4 bg-zinc-800 rounded-md mt-5" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay={pengalaman.dad} data-aos-once="true">
+              <div className="flex flex-wrap justify-between items-center">
+                <h1 className="text-2xl font-bold my-4">{pengalaman.company}</h1>
+                <p className="text-xl">{pengalaman.lengthOfWork}</p>
+              </div>
+              <Typewriter texts={pengalaman.position} fontSize="text-xl/normal" mode="static" />
+              <p className="text-base/loose mb-4">{pengalaman.desk}</p>
+              <h1 className="text-xl/normal">Work Type : <b>{pengalaman.workType.join(" | ")}</b></h1>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Pengalaman */}
 
       {/* Kontak */}
       <div className="kontak mt-10 py-10 scroll-mt-20" id="kontak">

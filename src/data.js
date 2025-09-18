@@ -193,3 +193,23 @@ export const listProyek = [
     dad: "400",
   },
 ];
+export const listPengalaman = [
+  {
+    id: 1,
+    company: "PT BGR Logistik Indonesia (member of IDFOOD) — Majalengka",
+    lengthOfWork: "Aug 2024 - Nov 2024",
+    position: ["Distribution Data Verifier"],
+    workType: ["Contract", "Government Program"],
+    desk: "Served for three months as a contract worker to verify the completeness and validity of evidence of stunting food aid distribution from sub-district field coordinators in the Majalengka area. The verified evidence was then inputted into the central system (IDFOOD) through the LOGEE application, to ensure the accuracy of targeting and accountability of the national program involving the National Food Agency (Bapanas), the state-owned enterprise IDFOOD, BGR Logistik Indonesia, and Berdikari.",
+    dad: "200",
+  },
+  {
+    id: 2,
+    company: "Saung Digital Printing — Lemahsugih, Majalengka ",
+    lengthOfWork: "Nov 2020 - Nov 2020",
+    position: ["Graphic Designer"],
+    workType: ["Fulltime"],
+    desk: "During my time there, I was responsible for designing various visual design needs, such as banners, signs, stickers, product packaging, and other printed promotional materials, as requested by clients. In this role, I developed the ability to transform concepts into attractive, functional, and production-ready designs, while ensuring the quality of the prints met company standards. This experience trained me to work quickly, meticulously, and creatively when dealing with diverse and time-sensitive design requests.",
+    dad: "300",
+  },
+];
