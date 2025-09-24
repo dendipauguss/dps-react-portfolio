@@ -16,7 +16,7 @@ function App() {
           <h1 className="text-5xl/tight font-bold mb-6">Hi, I'm Dendi Paugus Sukmaya</h1>
           <Typewriter texts={teks} />
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="https://drive.google.com/file/d/1qkXlawZ8DESYQFMkZyF_pIXaQLx4Ndxi/view?usp=sharing" className="bg-yellow-500 p-4 rounded-2xl hover:bg-blue-400">
+            <a href="https://drive.google.com/file/d/1qkXlawZ8DESYQFMkZyF_pIXaQLx4Ndxi/view?usp=sharing" className="bg-yellow-500 p-4 rounded-2xl hover:bg-blue-400" target="_blank">
               Download CV <i className="ri-download-2-line ri-md"></i>
             </a>
             <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
