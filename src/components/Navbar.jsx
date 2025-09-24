@@ -36,7 +36,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`navbar flex items-center justify-between fixed top-0 lg:px-19 md:px-27 px-5 left-0 w-full z-50 transition-all duration-300
+            className={`navbar flex items-center justify-between fixed top-0 lg:px-19 md:px-10 px-5 left-0 w-full z-50 transition-all duration-300
                 ${shrink ? "py-3 bg-yellow-600/10 backdrop-blur-md shadow-md" : "py-7 bg-transparent"}`}
         >
 
@@ -54,10 +54,15 @@ const Navbar = () => {
 
             {/* Menu */}
             <ul
-                className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2 
-                    md:-translate-x-0 md:opacity-100 bg-white/30 md:backdrop-blur-none backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl 
-                    md:bg-transparent transition-all md:transition-none z-40 
-                    ${active ? "top-1 opacity-100" : "-top-10 opacity-0"}`}
+                className={`menu flex md:flex-nowrap flex-wrap items-center justify-center
+      sm:gap-10 gap-4 
+      md:static fixed left-0 md:left-1/2 md:-translate-x-0 -translate-x-0
+      w-full md:w-auto
+      md:opacity-100 bg-white/30 md:backdrop-blur-none backdrop-blur-md 
+      p-4 md:p-0 
+      md:rounded-none rounded-br-2xl rounded-bl-2xl
+      md:bg-transparent transition-all md:transition-none z-40
+      ${active ? "top-1 opacity-100" : "-top-60 opacity-0"}`}
             >
                 <li><a href="#beranda" className="sm:text-lg text-base font-medium">Home</a></li>
                 <li><a href="#tentang" className="sm:text-lg text-base font-medium">About</a></li>
