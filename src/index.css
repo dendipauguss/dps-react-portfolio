@@ -4,18 +4,20 @@
     --bg-color: #ffffff;
     --text-color: #18181b;
     --card-bg: #f4f4f5;
+    --card-hover: #e4e4e7;
     --card-border: #e4e4e7;
     --nav-bg: rgba(255, 255, 255, 0.8);
-    --hero-frame-bg: #ffffff;
+    --input-bg: #f4f4f5;
 }
 
 .dark {
     --bg-color: #09090b;
     --text-color: #fafafa;
     --card-bg: #18181b;
+    --card-hover: #27272a;
     --card-border: #27272a;
     --nav-bg: rgba(24, 24, 27, 0.8);
-    --hero-frame-bg: #18181b;
+    --input-bg: #18181b;
 }
 
 @layer base {
@@ -31,9 +33,9 @@
         min-height: 100vh;
     }
 
-    /* Typewriter STYLES */
+    /* Typewriter STYLES - Ensure compatibility */
     .typewriter {
-        color: inherit;
+        color: inherit !important;
         font-family: monospace;
         overflow: hidden;
         border-right: .15em solid orange;
@@ -45,44 +47,63 @@
             blink-caret .5s step-end infinite;
     }
 
-    /* The typing effect */
     @keyframes typing {
         from { width: 0 }
         to { width: 100% }
     }
 
-    /* The typewriter cursor effect */
     @keyframes blink-caret {
         from, to { border-color: transparent }
         50% { border-color: orange }
     }
 
-    /* Override hardcoded dark classes to adapt to theme */
-    .bg-zinc-900 {
-        background-color: var(--bg-color) !important;
-    }
-    
-    .bg-zinc-800 {
-        background-color: var(--card-bg) !important;
-    }
-    
-    .bg-zinc-700, .bg-zinc-600, .bg-zinc-500 {
+    /* 
+       GLOBAL OVERRIDES 
+       This forced the hardcoded zinc classes to adapt to our theme variables
+    */
+
+    /* Base background overrides */
+    .bg-zinc-900, .bg-zinc-800, .bg-zinc-700, .bg-zinc-600 {
         background-color: var(--card-bg) !important;
         color: var(--text-color) !important;
     }
 
+    /* Hover state overrides */
+    .hover\:bg-zinc-800:hover, 
+    .hover\:bg-zinc-700:hover, 
+    .hover\:bg-zinc-600:hover {
+        background-color: var(--card-hover) !important;
+    }
+
+    /* Group hover overrides (for the tool icons) */
+    .group:hover .group-hover\:bg-zinc-900 {
+        background-color: var(--card-hover) !important;
+    }
+
+    /* Border overrides */
     .border-zinc-600, .border-zinc-500 {
         border-color: var(--card-border) !important;
     }
 
+    /* Text overrides */
     .text-white {
+        color: inherit !important;
+    }
+
+    /* Input overrides for Contact Form */
+    .bg-zinc-500 {
+        background-color: var(--input-bg) !important;
+        border: 1px solid var(--card-border) !important;
         color: var(--text-color) !important;
     }
-    
-    /* Input transparency for light mode */
-    input, textarea {
-        background-color: var(--card-bg) !important;
-        color: var(--text-color) !important;
-        border: 1px solid var(--card-border);
+
+    /* Ensure specific hero elements that should stay dark/bright are handled */
+    .bg-yellow-500, .bg-blue-700 {
+        color: white !important; /* Keep buttons readable */
+    }
+
+    /* Adjust opaque/opacity classes if they look bad in light mode */
+    .opacity-50 {
+        opacity: 0.7 !important;
     }
 }
