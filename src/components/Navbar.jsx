@@ -6,6 +6,21 @@ const Navbar = () => {
     const [shrink, setShrink] = useState(false);   // untuk desktop
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
+    const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+        localStorage.setItem("theme", theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
+    };
+
     useEffect(() => {
         const handleResize = () => {
             setIsDesktop(window.innerWidth >= 768);
@@ -71,6 +86,19 @@ const Navbar = () => {
                 <li><a href="#pengalaman" className="sm:text-lg text-base font-medium">Work Experience</a></li>
                 <li><a href="#kontak" className="sm:text-lg text-base font-medium">Contact</a></li>
             </ul>
+
+            {/* Theme Toggle Button */}
+            <button
+                onClick={toggleTheme}
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-500 text-white cursor-pointer hover:bg-yellow-600 transition-colors z-50 ml-4"
+                aria-label="Toggle Theme"
+            >
+                {theme === "dark" ? (
+                    <i className="ri-sun-line ri-lg"></i>
+                ) : (
+                    <i className="ri-moon-line ri-lg"></i>
+                )}
+            </button>
 
         </div>
     );

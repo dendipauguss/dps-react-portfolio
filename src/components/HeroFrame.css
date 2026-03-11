@@ -1,0 +1,58 @@
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Enhancing the tech brackets */
+.hero-frame-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 30%, rgba(250, 204, 21, 0.05) 100%);
+  pointer-events: none;
+  z-index: 15;
+}
+
+/* Add a scanline animation if needed */
+.scanline {
+  width: 100%;
+  height: 2px;
+  background: rgba(251, 191, 36, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  animation: scan 4s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

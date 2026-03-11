@@ -1,24 +1,45 @@
 @import "tailwindcss";
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #18181b;
+    --card-bg: #f4f4f5;
+    --card-border: #e4e4e7;
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --hero-frame-bg: #ffffff;
+}
+
+.dark {
+    --bg-color: #09090b;
+    --text-color: #fafafa;
+    --card-bg: #18181b;
+    --card-border: #27272a;
+    --nav-bg: rgba(24, 24, 27, 0.8);
+    --hero-frame-bg: #18181b;
+}
+
 @layer base {
+    html, body {
+        background-color: var(--bg-color) !important;
+        color: var(--text-color) !important;
+    }
+
     body {
         font-family: "Josefin Sans", sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin: 0;
+        min-height: 100vh;
     }
 
     /* Typewriter STYLES */
     .typewriter {
-        color: #fff;
+        color: inherit;
         font-family: monospace;
         overflow: hidden;
-        /* Ensures the content is not revealed until the animation */
         border-right: .15em solid orange;
-        /* The typwriter cursor */
         white-space: nowrap;
-        /* Keeps the content on a single line */
         margin: 0 auto;
-        /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em;
-        /* Adjust as needed */
         animation:
             typing 3.5s steps(30, end),
             blink-caret .5s step-end infinite;
@@ -26,25 +47,42 @@
 
     /* The typing effect */
     @keyframes typing {
-        from {
-            width: 0
-        }
-
-        to {
-            width: 100%
-        }
+        from { width: 0 }
+        to { width: 100% }
     }
 
     /* The typewriter cursor effect */
     @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+    }
 
-        from,
-        to {
-            border-color: transparent
-        }
+    /* Override hardcoded dark classes to adapt to theme */
+    .bg-zinc-900 {
+        background-color: var(--bg-color) !important;
+    }
+    
+    .bg-zinc-800 {
+        background-color: var(--card-bg) !important;
+    }
+    
+    .bg-zinc-700, .bg-zinc-600, .bg-zinc-500 {
+        background-color: var(--card-bg) !important;
+        color: var(--text-color) !important;
+    }
 
-        50% {
-            border-color: orange
-        }
+    .border-zinc-600, .border-zinc-500 {
+        border-color: var(--card-border) !important;
+    }
+
+    .text-white {
+        color: var(--text-color) !important;
+    }
+    
+    /* Input transparency for light mode */
+    input, textarea {
+        background-color: var(--card-bg) !important;
+        color: var(--text-color) !important;
+        border: 1px solid var(--card-border);
     }
 }

@@ -1,5 +1,6 @@
 import DataImage from "./data";
 import Typewriter from "./components/Typewriter";
+import HeroFrame from "./components/HeroFrame";
 import { listTools, listProyek, listPengalaman } from "./data";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <h1 className="text-5xl/tight font-bold mb-6">Hi, I'm Dendi Paugus Sukmaya</h1>
           <Typewriter texts={teks} />
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="#kontak" className="bg-yellow-500 p-4 rounded-2xl hover:bg-blue-400">
+            <a href="#kontak" className="bg-yellow-500 p-4 rounded-2xl hover:bg-yellow-600 transition-colors">
               Send Message <i className="ri-mail-send-line ri-md"></i>
             </a>
             <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
@@ -24,7 +25,9 @@ function App() {
             </a>
           </div>
         </div>
-        <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-3s rounded-3xl" loading="lazy" />
+        <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-3s">
+          <HeroFrame image={DataImage.HeroImage} />
+        </div>
       </div>
 
       {/* Tentang */}
