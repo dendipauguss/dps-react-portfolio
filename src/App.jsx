@@ -17,7 +17,7 @@ function App() {
           <Typewriter texts={teks} />
           <div className="flex items-center sm:gap-4 gap-2">
             <a href="#kontak" className="bg-yellow-500 p-4 rounded-2xl hover:bg-blue-400">
-              Send Email <i className="ri-mail-send-line ri-md"></i>
+              Send Message <i className="ri-mail-send-line ri-md"></i>
             </a>
             <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
               See The Projects <i className="ri-arrow-down-circle-line ri-lg"></i>

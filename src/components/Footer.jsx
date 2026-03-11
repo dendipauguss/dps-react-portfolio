@@ -18,7 +18,9 @@ const Footer = () => {
                         <a href="https://linkedin.com/in/dendi-paugus-sukmaya" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
                             <i className="ri-linkedin-fill ri-xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/_denpau89/" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
+                        {/* <a href="https://www.instagram.com/_denpau89" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
+                            <i className="ri-instagram-line ri-xl"></i> */}
+                        <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
                             <i className="ri-instagram-line ri-xl"></i>
                         </a>
                         <a href="https://github.com/dendipauguss" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
