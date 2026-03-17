@@ -45,7 +45,7 @@ function App() {
                 <p>Completed Projects</p>
               </div>
               <div>
-                <h1 className="text-4xl mb-1">2 <span className="text-blue-500">+</span></h1>
+                <h1 className="text-4xl mb-1">{listPengalaman.length} <span className="text-blue-500">+</span></h1>
                 <p>Experience</p>
               </div>
             </div>
