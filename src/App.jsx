@@ -76,7 +76,7 @@ function App() {
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">Projects</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">The following projects have been completed:</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-          {listProyek.map((proyek) => (
+          {[...listProyek].sort((a, b) => b.id - a.id).map((proyek) => (
             <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay={proyek.dad} data-aos-once="true">
               <img src={proyek.gambar} alt="Proyek Image" />
               <div>
@@ -84,7 +84,7 @@ function App() {
                 <p className="text-base/loose mb-4">{proyek.desk}</p>
                 <div className="flex flex-wrap gap-2">
                   {proyek.tools.map((tool, index) => (
-                    <p key={index} className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold">{tool}</p>
+                    <p key={index} className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold hover:bg-zinc-700 transition-colors">{tool}</p>
                   ))}
                 </div>
                 <div className="mt-8 text-center">

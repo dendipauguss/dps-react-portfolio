@@ -1,4 +1,5 @@
 import HeroImage from "/assets/dendi-img.webp";
+// import HeroImage from "/assets/dendi_gemini_v2.png";
 import LogoImage from "/assets/dps-logo.png";
 
 const Image = {
@@ -152,18 +153,17 @@ import Proyek1 from "/assets/proyek/proyek1.webp";
 import Proyek2 from "/assets/proyek/proyek2.webp";
 import Proyek3 from "/assets/proyek/proyek3.webp";
 import Proyek4 from "/assets/proyek/proyek4.webp";
-// import Proyek5 from "/assets/proyek/proyek5.webp";
-// import Proyek6 from "/assets/proyek/proyek6.webp";
+import Proyek5 from "/assets/proyek/proyek5.webp";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Academic Quality Assurance Information System",
-    desk: "A web-based academic quality assurance system for Muhammadiyah University of Cirebon. An administrator dashboard has been developed and maintained to manage internal quality audits, lecturer performance monitoring, and academic reporting. The public site displays general information, while key features are accessible through registered admin and user logins within the university.",
-    tools: ["HTML", "Bootstrap", "Javascript", "Codeigniter 3", "MySQL"],
-    links: ["https://mutu.umc.ac.id/"],
-    dad: "200",
+    nama: "1 Minute 2D Animation using Toon Boom Harmony 17",
+    desk: "The animation project “KUALAT IS REAL” is a 2D Animation course assignment that I worked on using Toon Boom Harmony 17 for animation creation, CorelDraw X7 for background design, and Sony Vegas Pro 13 for final editing. This animation conveys a moral message about the importance of respecting others, by conveying that every action has its consequences—in line with the meaning of “kualat” in Indonesian culture.",
+    tools: ["Harmony", "Vegas Pro", "CorelDraw"],
+    links: ["https://youtu.be/EIy-OZB8ng0?si=lRgHeCNOsukxc4a5"],
+    dad: "400",
   },
   {
     id: 2,
@@ -186,12 +186,30 @@ export const listProyek = [
   {
     id: 4,
     gambar: Proyek4,
-    nama: "1 Minute 2D Animation using Toon Boom Harmony 17",
-    desk: "The animation project “KUALAT IS REAL” is a 2D Animation course assignment that I worked on using Toon Boom Harmony 17 for animation creation, CorelDraw X7 for background design, and Sony Vegas Pro 13 for final editing. This animation conveys a moral message about the importance of respecting others, by conveying that every action has its consequences—in line with the meaning of “kualat” in Indonesian culture.",
-    tools: ["Harmony", "Vegas Pro", "CorelDraw"],
-    links: ["https://youtu.be/EIy-OZB8ng0?si=lRgHeCNOsukxc4a5"],
-    dad: "400",
+    nama: "Academic Quality Assurance Information System",
+    desk: "A web-based academic quality assurance system for Muhammadiyah University of Cirebon. An administrator dashboard has been developed and maintained to manage internal quality audits, lecturer performance monitoring, and academic reporting. The public site displays general information, while key features are accessible through registered admin and user logins within the university.",
+    tools: ["HTML", "Bootstrap", "Javascript", "Codeigniter 3", "MySQL"],
+    links: ["https://mutu.umc.ac.id/"],
+    dad: "200",
   },
+  {
+    id: 5,
+    gambar: Proyek5,
+    nama: "Administrative Information System for Sanctions Management",
+    desk: "This web application is an information system designed to facilitate the monitoring, management, and reporting of administrative sanctions imposed on business actors in a structured and integrated manner. This system was developed to support the agency's oversight needs, particularly in recording violations, imposing gradual sanctions (escalation), and monitoring the follow-up status of each sanction letter issued.",
+    tools: ["HTML", "Bootstrap", "Javascript", "Laravel", "MySQL"],
+    links: ["https://administratif.bappebti.go.id/"],
+    dad: "200",
+  },
+  // {
+  //   id: 6,
+  //   gambar: Proyek6,
+  //   nama: "Alternative Trading System Transaction Performance Analysis Information System",
+  //   desk: "This application is a web-based system designed to automatically parse, analyze, and validate trading log data from Journal Report and Equity Report files. This system facilitates faster, more accurate, and more efficient auditing and monitoring of trading activity.",
+  //   tools: ["HTML", "Bootstrap", "Javascript", "Laravel", "MySQL"],
+  //   links: ["https://data-wastran2.bappebti.go.id/"],
+  //   dad: "200",
+  // },
 ];
 export const listPengalaman = [
   {
