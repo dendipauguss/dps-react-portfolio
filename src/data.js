@@ -214,6 +214,15 @@ export const listProyek = [
 export const listPengalaman = [
   {
     id: 1,
+    company: "Saung Digital Printing — Lemahsugih, Majalengka ",
+    lengthOfWork: "Nov 2020 - Nov 2020",
+    position: ["Graphic Designer"],
+    workType: ["Fulltime"],
+    desk: "During my time there, I was responsible for designing various visual design needs, such as banners, signs, stickers, product packaging, and other printed promotional materials, as requested by clients. In this role, I developed the ability to transform concepts into attractive, functional, and production-ready designs, while ensuring the quality of the prints met company standards. This experience trained me to work quickly, meticulously, and creatively when dealing with diverse and time-sensitive design requests.",
+    dad: "300",
+  },
+  {
+    id: 2,
     company: "PT BGR Logistik Indonesia (member of IDFOOD) — Majalengka",
     lengthOfWork: "Aug 2024 - Nov 2024",
     position: ["Distribution Data Verifier"],
@@ -222,12 +231,12 @@ export const listPengalaman = [
     dad: "200",
   },
   {
-    id: 2,
-    company: "Saung Digital Printing — Lemahsugih, Majalengka ",
-    lengthOfWork: "Nov 2020 - Nov 2020",
-    position: ["Graphic Designer"],
-    workType: ["Fulltime"],
-    desk: "During my time there, I was responsible for designing various visual design needs, such as banners, signs, stickers, product packaging, and other printed promotional materials, as requested by clients. In this role, I developed the ability to transform concepts into attractive, functional, and production-ready designs, while ensuring the quality of the prints met company standards. This experience trained me to work quickly, meticulously, and creatively when dealing with diverse and time-sensitive design requests.",
-    dad: "300",
+    id: 3,
+    company: "Commodity Futures Trading Supervisory Agency (BAPPEBTI), Ministry of Trade of the Republic of Indonesia — Jakarta",
+    lengthOfWork: "Nov 2025 - Present",
+    position: ["Trading Staff"],
+    workType: ["Internship", "Government Program"],
+    desk: "During my internship with the Indonesian Ministry of Manpower and placement at the Commodity Futures Trading Supervisory Agency (BAPPEBTI), I served as a Trading Staff member, focusing on data processing, analysis, and reporting in the areas of supervision and enforcement. In practice, I participated in developing a web application capable of automatically checking and analyzing errors or violations in transaction reports on alternative trading systems. Furthermore, I also developed an administrative application to support data and document management related to the imposition of sanctions on business actors in the Commodity Futures Trading (PBK), Warehouse Receipt System (SRG), and Commodity Auction Market (PLK) sectors. This experience not only honed my technical skills in system development but also enhanced my understanding of business processes and regulations in the national trade sector.",
+    dad: "200",
   },
 ];

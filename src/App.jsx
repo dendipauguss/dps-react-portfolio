@@ -104,7 +104,7 @@ function App() {
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">Work Experience</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">Some work experience during or after education:</p>
         <div className="proyek-box mt-14">
-          {listPengalaman.map((pengalaman) => (
+          {[...listPengalaman].sort((a, b) => b.id - a.id).map((pengalaman) => (
             <div key={pengalaman.id} className="p-4 bg-zinc-800 rounded-md mt-5" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay={pengalaman.dad} data-aos-once="true">
               <div className="flex flex-wrap justify-between items-center">
                 <h1 className="text-2xl font-bold my-4">{pengalaman.company}</h1>
