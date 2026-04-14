@@ -26,7 +26,7 @@ const Footer = () => {
                         <a href="https://github.com/dendipauguss" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
                             <i className="ri-github-line ri-xl"></i>
                         </a>
-                        <a href="https://www.youtube.com/@dendipaugussukmaya3303" target="_blank" rel="noopener noreferrer">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
                             <i className="ri-youtube-fill ri-xl"></i>
                         </a>
                     </div>
