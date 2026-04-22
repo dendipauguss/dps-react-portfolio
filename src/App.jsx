@@ -106,9 +106,9 @@ function App() {
         <div className="proyek-box mt-14">
           {[...listPengalaman].sort((a, b) => b.id - a.id).map((pengalaman) => (
             <div key={pengalaman.id} className="p-4 bg-zinc-800 rounded-md mt-5" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay={pengalaman.dad} data-aos-once="true">
-              <div className="flex flex-wrap justify-between items-center">
+              <div className="flex justify-between items-start gap-4">
                 <h1 className="text-2xl font-bold my-4">{pengalaman.company}</h1>
-                <p className="text-xl">{pengalaman.lengthOfWork}</p>
+                <p className="text-xl my-4 shrink-0 text-right">{pengalaman.lengthOfWork}</p>
               </div>
               <Typewriter texts={pengalaman.position} fontSize="text-xl/normal" mode="static" />
               <p className="text-base/loose mb-4">{pengalaman.desk}</p>
