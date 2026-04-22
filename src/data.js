@@ -154,6 +154,7 @@ import Proyek2 from "/assets/proyek/proyek2.webp";
 import Proyek3 from "/assets/proyek/proyek3.webp";
 import Proyek4 from "/assets/proyek/proyek4.webp";
 import Proyek5 from "/assets/proyek/proyek5.webp";
+import Proyek6 from "/assets/proyek/proyek6.webp";
 
 export const listProyek = [
   {
@@ -201,15 +202,15 @@ export const listProyek = [
     links: ["https://administratif.bappebti.go.id/"],
     dad: "200",
   },
-  // {
-  //   id: 6,
-  //   gambar: Proyek6,
-  //   nama: "Alternative Trading System Transaction Performance Analysis Information System",
-  //   desk: "This application is a web-based system designed to automatically parse, analyze, and validate trading log data from Journal Report and Equity Report files. This system facilitates faster, more accurate, and more efficient auditing and monitoring of trading activity.",
-  //   tools: ["HTML", "Bootstrap", "Javascript", "Laravel", "MySQL"],
-  //   links: ["https://data-wastran2.bappebti.go.id/"],
-  //   dad: "200",
-  // },
+  {
+    id: 6,
+    gambar: Proyek6,
+    nama: "Transaction Monitoring Analysis Information System for Alternative Trading Systems",
+    desk: "This web application was developed to facilitate the automated analysis, monitoring, and auditing of trading transaction data through Journal Report and Equity Report files. The system is capable of processing large amounts of log data, quickly displaying analysis results, and reducing manual work in checking reports. This application was created to improve the efficiency of auditing and monitoring trading activities, accelerate report data analysis, and help accurately identify potential system and transaction errors.",
+    tools: ["HTML", "Bootstrap", "Javascript", "Laravel", "MySQL"],
+    links: ["https://data-wastran2.bappebti.go.id/"],
+    dad: "200",
+  },
 ];
 export const listPengalaman = [
   {
