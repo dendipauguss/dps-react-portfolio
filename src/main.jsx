@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import Navbar from './components/Navbar.jsx'
@@ -15,12 +16,14 @@ import ScrollToTopButton from './components/ScrollToTopButton.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PreLoader />
-    <div className='container mx-auto px-5'>
-      <Navbar />
-      <App />
-      <ScrollToTopButton />
-    </div>
-    <Footer />
+    <HashRouter>
+      <PreLoader />
+      <div className='container mx-auto px-5'>
+        <Navbar />
+        <App />
+        <ScrollToTopButton />
+      </div>
+      <Footer />
+    </HashRouter>
   </StrictMode>,
 )

@@ -1,5 +1,6 @@
 import DataImage from "../data";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [active, setActive] = useState(false);   // untuk mobile
@@ -79,12 +80,12 @@ const Navbar = () => {
       md:bg-transparent transition-all md:transition-none z-40
       ${active ? "top-1 opacity-100" : "-top-60 opacity-0"}`}
             >
-                <li><a href="#beranda" className="sm:text-lg text-base font-medium">Home</a></li>
-                <li><a href="#tentang" className="sm:text-lg text-base font-medium">About</a></li>
-                <li><a href="#tools" className="sm:text-lg text-base font-medium">Tools</a></li>
-                <li><a href="#proyek" className="sm:text-lg text-base font-medium">Projects</a></li>
-                <li><a href="#pengalaman" className="sm:text-lg text-base font-medium">Work Experience</a></li>
-                <li><a href="#kontak" className="sm:text-lg text-base font-medium">Contact</a></li>
+                <li><Link to="/" onClick={() => setActive(false)} className="sm:text-lg text-base font-medium">Home</Link></li>
+                <li><Link to="/about" onClick={() => setActive(false)} className="sm:text-lg text-base font-medium">About</Link></li>
+                <li><Link to="/tools" onClick={() => setActive(false)} className="sm:text-lg text-base font-medium">Tools</Link></li>
+                <li><Link to="/projects" onClick={() => setActive(false)} className="sm:text-lg text-base font-medium">Projects</Link></li>
+                <li><Link to="/experience" onClick={() => setActive(false)} className="sm:text-lg text-base font-medium">Work Experience</Link></li>
+                <li><Link to="/contact" onClick={() => setActive(false)} className="sm:text-lg text-base font-medium">Contact</Link></li>
             </ul>
 
             {/* Theme Toggle Button */}

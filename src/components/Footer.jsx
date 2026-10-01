@@ -1,4 +1,5 @@
 import Typewriter from "./Typewriter";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -35,12 +36,12 @@ const Footer = () => {
                 {/* Bagian Kanan */}
                 <div className="text-center md:text-right">
                     <div className="flex flex-wrap gap-6 justify-center md:justify-end text-sm mb-3">
-                        <a href="#beranda" className="hover:underline text-xl">Home</a>
-                        <a href="#tentang" className="hover:underline text-xl">About</a>
-                        <a href="#tools" className="hover:underline text-xl">Tools</a>
-                        <a href="#proyek" className="hover:underline text-xl">Projects</a>
-                        <a href="#pengalaman" className="hover:underline text-xl">Work Experience</a>
-                        <a href="#kontak" className="hover:underline text-xl">Contact</a>
+                        <Link to="/" className="hover:underline text-xl">Home</Link>
+                        <Link to="/about" className="hover:underline text-xl">About</Link>
+                        <Link to="/tools" className="hover:underline text-xl">Tools</Link>
+                        <Link to="/projects" className="hover:underline text-xl">Projects</Link>
+                        <Link to="/experience" className="hover:underline text-xl">Work Experience</Link>
+                        <Link to="/contact" className="hover:underline text-xl">Contact</Link>
                     </div>
                     <p className="text-xl opacity-80">
                         © 2025 Dendi Paugus Sukmaya. All rights reserved.
